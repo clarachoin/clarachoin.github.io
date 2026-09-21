@@ -20,7 +20,7 @@ window.I18N = {
     "home.hero.chip1": "Communications",
     "home.hero.chip2": "Stratégie & Contenu",
     "home.hero.chip3": "Événementiel & Créa",
-    "home.hero.tagline": "Transformer le quotidien en expérience.",
+    "home.hero.tagline": "Transformer votre quotidien en expériences.",
     "home.hero.cta1": "Voir le portfolio",
     "home.hero.cta2": "Me contacter",
 
@@ -224,7 +224,7 @@ window.I18N = {
     "home.hero.chip1": "Communications",
     "home.hero.chip2": "Strategy & Content",
     "home.hero.chip3": "Events & Creative",
-    "home.hero.tagline": "Turning the everyday into experience.",
+    "home.hero.tagline": "Turning your everyday into experiences.",
     "home.hero.cta1": "See the portfolio",
     "home.hero.cta2": "Get in touch",
 
