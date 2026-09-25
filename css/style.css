@@ -720,7 +720,7 @@ ul.bullets li::before{ content:"–"; position:absolute; left:0; }
   display:grid;
   grid-template-columns: 1fr 1fr;
   gap: clamp(2rem, 5vw, 4rem);
-  align-items:center;
+  align-items:start;
 }
 @media (max-width: 820px){ .contact-grid{ grid-template-columns:1fr; } }
 .contact-links{ margin-top: 1.6rem; display:flex; flex-direction:column; gap:1.1rem; }
