@@ -1,0 +1,36 @@
+# Regenerates js/gallery-data.js whenever pictures are added, renamed or
+# removed under img/ or videos/, so new photos show up on the site without running
+# scripts/build-gallery.js by hand.
+name: Update gallery
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "img/**"
+      - "videos/**"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Rebuild gallery list
+        run: node scripts/build-gallery.js
+
+      - name: Commit changes
+        run: |
+          if git diff --quiet -- js/gallery-data.js; then
+            echo "Gallery list already up to date."
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add js/gallery-data.js
+            git commit -m "Update gallery list"
+            git push
+          fi

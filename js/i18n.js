@@ -57,10 +57,10 @@ window.I18N = {
     /* ---------- EXPERTISE ---------- */
     "expertise.title": "Expertise — Clara Choin",
     "expertise.hero.eyebrow": "Mes terrains de jeux",
-    "expertise.hero.title": "Communication, stratégie, événementiel",
-    "expertise.hero.text": "Six expertises, trois familles de missions : communication, stratégie & contenu, événementiel & créa. Je les fais dialoguer pour transformer un sujet du quotidien en moment qu'on retient.",
+    "expertise.hero.title": "Communications, stratégie, événementiel",
+    "expertise.hero.text": "Six expertises, trois familles de missions : communications, stratégie & contenu, événementiel & créa. Je les fais dialoguer pour transformer un sujet du quotidien en moment qu'on retient.",
 
-    "expertise.groupA.label": "Groupe 1 — Communication",
+    "expertise.groupA.label": "Groupe 1 — Communications",
     "expertise.groupB.label": "Groupe 2 — Stratégie & Contenu",
     "expertise.groupC.label": "Groupe 3 — Événementiel & Créa",
 
@@ -124,11 +124,14 @@ window.I18N = {
     "portfolio.hero.title": "Des projets pensés pour être vécus",
     "portfolio.hero.text": "Des projets, des contextes différents — une même méthode : comprendre l'enjeu, imaginer un format qui sort de l'ordinaire, et le porter jusqu'au bout. Cliquez sur une image pour la voir en entier.",
 
+    "cat.comm.title": "Communications & Contenu",
+    "cat.comm.text": "Communication interne, communication externe, rédaction, stratégie : un aperçu de mes réalisations, classées par thème.",
+    "gallery.comingSoon": "Bientôt disponible — à venir.",
     "cat1.title": "Communication interne, RH, RSE",
     "cat2.title": "Communication externe",
     "cat3.title": "Conception Rédaction",
     "cat4.title": "Stratégie de communication et RH",
-    "cat5.title": "Photographie",
+    "cat5.title": "Photographie & Vidéos",
     "cat5.text": "Portraits, événements, nature, marque : un aperçu de mes images, classées par thème. La galerie s'agrandit au fil des shootings.",
     "cat6.title": "Événementiel et animation",
 
@@ -224,7 +227,7 @@ window.I18N = {
     "home.hero.chip1": "Communications",
     "home.hero.chip2": "Strategy & Content",
     "home.hero.chip3": "Events & Creative",
-    "home.hero.tagline": "Turning your everyday into experiences.",
+    "home.hero.tagline": "Transform your everyday life into experiences.",
     "home.hero.cta1": "See the portfolio",
     "home.hero.cta2": "Get in touch",
 
@@ -261,10 +264,10 @@ window.I18N = {
     /* ---------- EXPERTISE ---------- */
     "expertise.title": "Expertise — Clara Choin",
     "expertise.hero.eyebrow": "My playgrounds",
-    "expertise.hero.title": "Communication, strategy, events",
-    "expertise.hero.text": "Six areas of expertise, three families of missions: communication, strategy & content, events & creative. I bring them together to turn an everyday topic into a moment people remember.",
+    "expertise.hero.title": "Communications, strategy, events",
+    "expertise.hero.text": "Six areas of expertise, three families of missions: communications, strategy & content, events & creative. I bring them together to turn an everyday topic into a moment people remember.",
 
-    "expertise.groupA.label": "Group 1 — Communication",
+    "expertise.groupA.label": "Group 1 — Communications",
     "expertise.groupB.label": "Group 2 — Strategy & Content",
     "expertise.groupC.label": "Group 3 — Events & Creative",
 
@@ -328,11 +331,14 @@ window.I18N = {
     "portfolio.hero.title": "Projects built to be experienced",
     "portfolio.hero.text": "Projects, different contexts — one same method: understand the challenge, imagine a format that breaks the mould, and carry it all the way through. Click any image to see it in full.",
 
+    "cat.comm.title": "Communications & Content",
+    "cat.comm.text": "Internal communication, external communication, copywriting, strategy: a look at my work, sorted by theme.",
+    "gallery.comingSoon": "Coming soon.",
     "cat1.title": "Internal Communication, HR, CSR",
     "cat2.title": "External Communication",
     "cat3.title": "Content & Copywriting",
     "cat4.title": "Communication & HR Strategy",
-    "cat5.title": "Photography",
+    "cat5.title": "Photography & Videos",
     "cat5.text": "Portraits, events, nature, brand: a look at my images, sorted by theme. The gallery grows with every shoot.",
     "cat6.title": "Events & Hosting",
 
