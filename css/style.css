@@ -576,7 +576,7 @@ ul.bullets li::before{ content:"–"; position:absolute; left:0; }
   all:unset; cursor:zoom-in; display:block; width:100%; aspect-ratio:1/1; overflow:hidden;
 }
 .photo-grid button.thumb[hidden]{ display:none; }
-.photo-grid button.thumb[data-video]{ position:relative; background:#101012; }
+.photo-grid button.thumb[data-video], .photo-grid button.thumb[data-youtube]{ position:relative; background:#101012; }
 .photo-grid video{ width:100%; height:100%; object-fit:cover; display:block; pointer-events:none; }
 .play-badge{
   position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);
@@ -637,8 +637,6 @@ ul.bullets li::before{ content:"–"; position:absolute; left:0; }
 .carousel-btn.next{ right:-14px; }
 @media (max-width: 900px){ .carousel{ --per-view:3; } }
 @media (max-width: 560px){ .carousel{ --per-view:2; } .carousel-btn.prev{ left:-6px; } .carousel-btn.next{ right:-6px; } }
-.video-embed{ margin-top: clamp(1.5rem, 3vw, 2.2rem); aspect-ratio:16/9; width:100%; background: var(--dark); }
-.video-embed iframe{ width:100%; height:100%; border:0; display:block; }
 .gallery-empty{ color: var(--ink-soft); font-style:italic; padding: 1.5rem 0; }
 
 /* =========================================================
@@ -653,7 +651,8 @@ ul.bullets li::before{ content:"–"; position:absolute; left:0; }
 .lightbox[hidden]{ display:none; }
 .lightbox figure{ margin:0; max-width: 100%; max-height:100%; display:flex; flex-direction:column; align-items:center; gap:0.8rem; }
 .lightbox video{ max-width: min(88vw, 1100px); max-height: 78vh; width:auto; height:auto; background:#000; }
-.lightbox video[hidden], .lightbox img[hidden]{ display:none; }
+.lightbox-frame{ width: min(88vw, 1100px, calc(78vh * 16 / 9)); aspect-ratio:16/9; border:0; background:#000; }
+.lightbox video[hidden], .lightbox img[hidden], .lightbox-frame[hidden]{ display:none; }
 .lightbox img{ max-width: min(88vw, 1100px); max-height: 78vh; width:auto; height:auto; object-fit:contain; background:#101012; }
 .lightbox figcaption{ color:#f1f1f3; font-size:0.9rem; text-align:center; max-width:70ch; }
 .lightbox-close, .lightbox-prev, .lightbox-next{

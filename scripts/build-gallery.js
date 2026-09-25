@@ -87,6 +87,22 @@ for (const [key, cfg] of Object.entries(GALLERIES)) {
         data[key].push({ src, cat: "videos", type: "video", alt: known[src] || "Vidéo — " + humanize(src) });
       });
   }
+  if (cfg.videosFolder) {
+    // videos/youtube.txt — one YouTube link or ID per line
+    const list = path.join(ROOT, cfg.videosFolder, "youtube.txt");
+    if (fs.existsSync(list)) {
+      const seen = new Set();
+      fs.readFileSync(list, "utf8").split(/\r?\n/).forEach((line) => {
+        line = line.trim();
+        if (!line || line.startsWith("#")) return;
+        const m = line.match(/(?:v=|youtu\.be\/|embed\/|shorts\/)([\w-]{11})/) || line.match(/^([\w-]{11})$/);
+        if (!m || seen.has(m[1])) return;
+        seen.add(m[1]);
+        const src = "youtube:" + m[1];
+        data[key].push({ src, cat: "videos", type: "youtube", id: m[1], alt: known[src] || "Vidéo YouTube" });
+      });
+    }
+  }
   console.log(key + ": " + data[key].length + " image(s)");
 }
 

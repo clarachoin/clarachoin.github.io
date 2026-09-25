@@ -324,10 +324,35 @@ window.GALLERY_DATA = {
       "alt": "Photographie — Street 8"
     },
     {
+      "src": "videos/beach.mp4",
+      "cat": "videos",
+      "type": "video",
+      "alt": "Vidéo — Beach"
+    },
+    {
       "src": "videos/drone_1.mp4",
       "cat": "videos",
       "type": "video",
       "alt": "Vidéo — Drone 1"
+    },
+    {
+      "src": "videos/reptile.mp4",
+      "cat": "videos",
+      "type": "video",
+      "alt": "Vidéo — Reptile"
+    },
+    {
+      "src": "videos/temple.mp4",
+      "cat": "videos",
+      "type": "video",
+      "alt": "Vidéo — Temple"
+    },
+    {
+      "src": "youtube:qC5DACA0N-Q",
+      "cat": "videos",
+      "type": "youtube",
+      "id": "qC5DACA0N-Q",
+      "alt": "Vidéo YouTube"
     }
   ]
 };
